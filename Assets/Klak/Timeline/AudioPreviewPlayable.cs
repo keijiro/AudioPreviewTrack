@@ -62,7 +62,7 @@ namespace Klak.Timeline
                 func.Invoke(null, new System.Object [] { clip, 0, false });
 
                 func = type.GetMethod("SetClipSamplePosition", new[] { typeof(AudioClip), typeof(int) });
-                func.Invoke(null, new System.Object [] { clip, (int)(time * 44100 + 1) });
+                func.Invoke(null, new System.Object [] { clip, (int)(time * clip.frequency + 1) });
 
                 UnityEditor.EditorApplication.update += CheckPosition;
                 _played = true;
