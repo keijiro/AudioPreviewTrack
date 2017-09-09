@@ -21,19 +21,26 @@ Known issues and limitations
   if there are more than two playing tracks.
 - Audio Preview Clip allocates small amount of GC memory per every frame :(
 
-Nice! But how about visual preview of waveform?
------------------------------------------------
+Nice! But how about having a waveform visualization?
+----------------------------------------------------
 
-It has been implemented in Unity 2017.2. Try a beta if you're interested.
+Waveform visualization with the standard Audio Track has been implemented in
+Unity 2017.2. [Try beta] if you're interested.
+
+[Try beta]: https://unity3d.com/unity/beta
 
 Disclaimer!
 -----------
 
 I made this small utility just for making it easy to synchronize animation and
 music when creating a music video with Unity Timeline. Please don't expect that
-it's going to be more than just a utility. I used pretty dirty and hackish
-tricks to implement it, so that it's not recommended to use for practical
-purposes.
+it's going to be more than just a utility. I used dirty and hackish tricks to
+implement it, so that it's not recommended for practical purposes.
+
+If you seriously think that this functionality is a must-have, please give a
+vote to [Feedback].
+
+[Feedback]: https://feedback.unity3d.com/
 
 License?
 --------
