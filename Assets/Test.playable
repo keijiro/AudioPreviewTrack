@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Name: AudioPreview
   m_EditorClassIdentifier: 
   template:
-    _clip: {fileID: 8300000, guid: e10779eb5ba8a9a438a320f4dd2693da, type: 3}
+    clip: {fileID: 8300000, guid: e10779eb5ba8a9a438a320f4dd2693da, type: 3}
 --- !u!114 &114705399069780726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -425,4 +425,4 @@ MonoBehaviour:
   m_Name: AudioPreview
   m_EditorClassIdentifier: 
   template:
-    _clip: {fileID: 8300000, guid: e10779eb5ba8a9a438a320f4dd2693da, type: 3}
+    clip: {fileID: 8300000, guid: e10779eb5ba8a9a438a320f4dd2693da, type: 3}

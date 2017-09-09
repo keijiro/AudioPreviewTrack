@@ -10,7 +10,7 @@ namespace Klak.Timeline
     {
         #region Serialized variables
 
-        public AudioClip _clip;
+        public AudioClip clip;
 
         #endregion
 
@@ -20,12 +20,12 @@ namespace Klak.Timeline
 
         public override void OnGraphStop(Playable playable)
         {
-            if (_clip != null) StopClip();
+            if (clip != null) StopClip();
         }
 
         public override void ProcessFrame(Playable playable, FrameData info, object playerData)
         {
-            if (_clip != null) PlayClip((float)playable.GetTime());
+            if (clip != null) PlayClip((float)playable.GetTime());
         }
 
         #endregion
@@ -41,7 +41,7 @@ namespace Klak.Timeline
         {
             var type = Type.GetType("UnityEditor.AudioUtil,UnityEditor");
             var func = type.GetMethod("GetClipPosition", new [] { typeof(AudioClip) });
-            return (float)func.Invoke(null, new System.Object [] { _clip });
+            return (float)func.Invoke(null, new System.Object [] { clip });
         }
 
         void CheckPosition()
@@ -59,10 +59,10 @@ namespace Klak.Timeline
 
                 var type = Type.GetType("UnityEditor.AudioUtil,UnityEditor");
                 var func = type.GetMethod("PlayClip", new [] { typeof(AudioClip), typeof(int), typeof(bool) });
-                func.Invoke(null, new System.Object [] { _clip, 0, false });
+                func.Invoke(null, new System.Object [] { clip, 0, false });
 
                 func = type.GetMethod("SetClipSamplePosition", new[] { typeof(AudioClip), typeof(int) });
-                func.Invoke(null, new System.Object [] { _clip, (int)(time * 44100 + 1) });
+                func.Invoke(null, new System.Object [] { clip, (int)(time * 44100 + 1) });
 
                 UnityEditor.EditorApplication.update += CheckPosition;
                 _played = true;
