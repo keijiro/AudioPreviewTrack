@@ -1,0 +1,12 @@
+{
+    "name": "Klak.Timeline.AudioPreview.Editor",
+    "references": [
+        "Klak.Timeline.AudioPreview"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

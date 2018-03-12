@@ -1,0 +1,8 @@
+{
+    "name": "jp.keijiro.audio-preview-track",
+    "displayName": "AudioPreviewTrack",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "AudioPreviewTrack is a custom track for Unity Timeline that allows instant audio playback in preview mode.",
+    "dependencies": { }
+}
