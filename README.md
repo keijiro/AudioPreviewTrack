@@ -1,9 +1,9 @@
-**Notice** -- Unity 2018.2 adds Audio Scrubbing support while editing. This
+**Notice**: Unity 2018.2 adds Audio Scrubbing support while editing. This
 can be enabled via the cog menu in the Timeline editor.
 
 ![screenshot](https://i.imgur.com/fANPIqN.png)
 
-So, from Unity 2018.2, it's recommended to use the Audio Scrubbing feature
+So from Unity 2018.2, it's recommended to use the Audio Scrubbing feature
 for audio preview while Timeline editing.
 
 AudioPreviewTrack
