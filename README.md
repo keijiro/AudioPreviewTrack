@@ -3,8 +3,8 @@ can be enabled via the cog menu in the Timeline editor.
 
 ![screenshot](https://i.imgur.com/fANPIqN.png)
 
-So, from Unity 2018.2, it's recommended to use Audio Scrubbing instead for
-audio preview while Timeline editing.
+So, from Unity 2018.2, it's recommended to use the Audio Scrubbing feature
+for audio preview while Timeline editing.
 
 AudioPreviewTrack
 =================
